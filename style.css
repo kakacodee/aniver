@@ -1,58 +1,58 @@
-body{
+body {
     background-color: #FADADD;
-}
-.subtitle{
-    text-align: left;
-    margin-top: 2%;
-    margin-left: 38.2%;
-    font-size: 20px;
-    color: #C99700;
-    font-weight: lighter;
+    margin: 0;
     font-family: 'playfair-display-regular', serif;
+    text-align: center;
 }
-.subtitle2{
-    text-align: left;
-    margin-top: 10%;
-    margin-left: 38%;
-    width: 26.2%;
-    font-size: 22px;
-    color: #C99700;
+
+.subtitle, .subtitle2, .subtitle3 {
     font-weight: lighter;
-    font-family: 'playfair-display-regular', serif  ;
+    color: #C99700;
+    margin: 10px auto;
 }
-.subtitle3{
-    text-align: left;
-    margin-top: -0.2%;
-    margin-left: 46.5%;
-    font-size: 18px;
+
+.subtitle3 {
     color: #3E3E3E;
     font-weight: 100;
-    font-family: 'playfair-display-regular', serif;
 }
-.title{
-    width: 700px;
-    text-align: center;
-    margin-left: 26%;
-    margin-top: -0.5%;
+
+.title {
+    max-width: 90%;
+    margin: 10px auto;
     font-size: 40px;
     color: #3E3E3E;
     font-family: 'great-vibes-regular', cursive;
-    
 }
-.gif{
-    margin-left: 37.3%;
+
+.gif {
     border-radius: 30px;
-    width:25%;
+    width: 250px;
     height: auto;
+    margin: 10px auto;
 }
-.button{
-    
-    margin-left: 46%;
-    margin-top: 1%;
+
+.button {
     background-color: #FADADD;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    color: white;
     cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Ajustes para celular */
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+    .subtitle, .subtitle2 {
+        font-size: 18px;
+    }
+    .subtitle3 {
+        font-size: 16px;
+    }
+    .gif {
+        width: 60%;
+    }
 }
