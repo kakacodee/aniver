@@ -13,22 +13,22 @@ body {
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     color: #C99700;
 }
 
 .subtitle2 {
-    font-size: 20px;
+    font-size: 18px;
     color: #C99700;
 }
 
 .subtitle3 {
-    font-size: 16px;
+    font-size: 14px;
     color: #3E3E3E;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #3E3E3E;
     font-family: 'great-vibes-regular', cursive;
 }
@@ -36,26 +36,26 @@ body {
 /* Imagem */
 .gif {
     display: block;
-    margin: 20px auto;
-    border-radius: 30px;
-    max-width: 250px; /* Limite no mobile */
-    width: 80%;
+    margin: 16px auto;
+    border-radius: 20px;
+    max-width: 200px;
+    width: 90%;
     height: auto;
 }
 
 /* Botão */
 .button {
     display: block;
-    margin: 10px auto;
+    margin: 12px auto;
     background-color: #FADADD;
     border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
 }
 
 .button img {
-    width: 60px; /* Tamanho do ícone no mobile */
+    width: 48px;
     height: auto;
 }
 
@@ -73,4 +73,15 @@ body {
     .button img {
         width: 80px;
     }
+}
+
+/* Responsividade para mobile médio (375px a 430px) */
+@media (max-width: 540px) {
+    .title { font-size: 1.5rem; }
+    .subtitle { font-size: 15px; }
+    .subtitle2 { font-size: 16px; }
+    .subtitle3 { font-size: 13px; }
+    .gif { max-width: 170px; }
+    .button img { width: 40px; }
+    body { padding: 8px; }
 }
