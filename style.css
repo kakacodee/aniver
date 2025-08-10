@@ -1,58 +1,76 @@
 body {
     background-color: #FADADD;
     margin: 0;
+    padding: 0;
     font-family: 'playfair-display-regular', serif;
-    text-align: center;
 }
 
-.subtitle, .subtitle2, .subtitle3 {
-    font-weight: lighter;
-    color: #C99700;
+/* Textos */
+.subtitle, .subtitle2, .subtitle3, .title {
+    text-align: center;
     margin: 10px auto;
+    max-width: 90%;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #C99700;
+}
+
+.subtitle2 {
+    font-size: 20px;
+    color: #C99700;
 }
 
 .subtitle3 {
+    font-size: 16px;
     color: #3E3E3E;
-    font-weight: 100;
 }
 
 .title {
-    max-width: 90%;
-    margin: 10px auto;
-    font-size: 40px;
+    font-size: 2rem;
     color: #3E3E3E;
     font-family: 'great-vibes-regular', cursive;
 }
 
+/* Imagem */
 .gif {
+    display: block;
+    margin: 20px auto;
     border-radius: 30px;
-    width: 250px;
+    max-width: 250px; /* Limite no mobile */
+    width: 80%;
     height: auto;
-    margin: 10px auto;
 }
 
+/* Botão */
 .button {
+    display: block;
+    margin: 10px auto;
     background-color: #FADADD;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    display: block;
-    margin: 10px auto;
 }
 
-/* Ajustes para celular */
-@media (max-width: 480px) {
-    .title {
-        font-size: 28px;
-    }
-    .subtitle, .subtitle2 {
-        font-size: 18px;
-    }
-    .subtitle3 {
-        font-size: 16px;
-    }
+.button img {
+    width: 60px; /* Tamanho do ícone no mobile */
+    height: auto;
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 768px) {
+    .title { font-size: 40px; }
+    .subtitle { font-size: 20px; }
+    .subtitle2 { font-size: 22px; }
+    .subtitle3 { font-size: 18px; }
+
     .gif {
-        width: 60%;
+        max-width: 350px;
+    }
+
+    .button img {
+        width: 80px;
     }
 }
