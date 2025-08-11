@@ -94,23 +94,7 @@ body {
     .subtitle3 { font-size: 13px;
     margin-top: -0.8rem;
     margin-bottom: 3rem; }
-    .arrow {
-        width: 48px;
-        height: auto;
-        display: block;
-        margin: 16px auto 0 auto;
-        /*centralizar a seta*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .gif { max-width: 170px; }
     .button img { width: 40px; }
     body { padding: 8px; }
-}
-.arrow {
-    width: 48px;
-    height: auto;
-    display: block;
-    margin: 24px auto 0 auto;
 }
