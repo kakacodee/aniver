@@ -25,6 +25,8 @@ body {
 .subtitle3 {
     font-size: 14px;
     color: #3E3E3E;
+    margin-top: -0.8rem;
+    margin-bottom: 3rem;
 }
 
 .title {
@@ -55,7 +57,14 @@ body {
 }
 
 .button img {
+    width: 64px;
+    height: auto;
+}
+.button img:hover {
     width: 48px;
+    transition: width 0.3s ease;
+    filter: brightness(0.9);
+    
     height: auto;
 }
 
@@ -65,7 +74,7 @@ body {
     .subtitle { font-size: 20px; }
     .subtitle2 { font-size: 22px; }
     .subtitle3 { font-size: 18px; }
-
+    
     .gif {
         max-width: 350px;
     }
@@ -81,7 +90,19 @@ body {
     .subtitle { font-size: 15px; }
     .subtitle2 { font-size: 16px; }
     .subtitle3 { font-size: 13px; }
+    .arrow {
+        width: 64px;
+        height: auto;
+        display: block;
+        margin: 16px auto 0 auto;
+    }
     .gif { max-width: 170px; }
     .button img { width: 40px; }
     body { padding: 8px; }
+}
+.arrow {
+    width: 64px;
+    height: auto;
+    display: block;
+    margin: 24px auto 0 auto;
 }
