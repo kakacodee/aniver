@@ -73,7 +73,9 @@ body {
     .title { font-size: 40px; }
     .subtitle { font-size: 20px; }
     .subtitle2 { font-size: 22px; }
-    .subtitle3 { font-size: 18px; }
+    .subtitle3 { font-size: 18px; 
+    margin-top: -0.8rem;
+    margin-bottom: 3rem;}
     
     .gif {
         max-width: 350px;
@@ -89,19 +91,25 @@ body {
     .title { font-size: 1.5rem; }
     .subtitle { font-size: 15px; }
     .subtitle2 { font-size: 16px; }
-    .subtitle3 { font-size: 13px; }
+    .subtitle3 { font-size: 13px;
+    margin-top: -0.8rem;
+    margin-bottom: 3rem; }
     .arrow {
-        width: 64px;
+        width: 48px;
         height: auto;
         display: block;
         margin: 16px auto 0 auto;
+        /*centralizar a seta*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .gif { max-width: 170px; }
     .button img { width: 40px; }
     body { padding: 8px; }
 }
 .arrow {
-    width: 64px;
+    width: 48px;
     height: auto;
     display: block;
     margin: 24px auto 0 auto;
