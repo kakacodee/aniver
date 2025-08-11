@@ -17,48 +17,16 @@ function Music(){
         btnimg.src = "img/play-button (3).png"
     }
 }
-let slideIndex = 0;
-let slideInterval;
+document.addEventListener('DOMContentLoaded', function () {
+  const slideshow = document.getElementById('slideshow');
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+  const total = slides.length;
 
-function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function next() {
+    index = (index + 1) % total;
+    slideshow.style.transform = `translateX(-${index * 100}%)`;
   }
 
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-// Muda automaticamente a cada 3 segundos
-function startSlideShow() {
-  showSlides();
-  slideInterval = setInterval(showSlides, 3000);
-}
-
-// Controle manual
-function plusSlides(n) {
-  clearInterval(slideInterval);
-  slideIndex += n - 1;
-  showSlides();
-  slideInterval = setInterval(showSlides, 3000);
-}
-
-function currentSlide(n) {
-  clearInterval(slideInterval);
-  slideIndex = n - 1;
-  showSlides();
-  slideInterval = setInterval(showSlides, 3000);
-}
-
-// Inicia o slide
-startSlideShow();
+  setInterval(next, 3000); // troca a cada 3s
+});
