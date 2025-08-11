@@ -67,7 +67,11 @@ body {
     
     height: auto;
 }
-
+p {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px; /* respira nas laterais */
+}
 /* Ajustes para telas maiores */
 @media (min-width: 768px) {
     .title { font-size: 40px; }
@@ -75,8 +79,8 @@ body {
     .subtitle2 { font-size: 22px; }
     .subtitle3 { font-size: 18px; 
     margin-top: -0.8rem;
-    margin-bottom: 3rem;}
-    
+    margin-bottom: 3rem;
+    }
     .gif {
         max-width: 350px;
     }
@@ -93,7 +97,8 @@ body {
     .subtitle2 { font-size: 16px; }
     .subtitle3 { font-size: 13px;
     margin-top: -0.8rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem; 
+    }
     .gif { max-width: 170px; }
     .button img { width: 40px; }
     body { padding: 8px; }
