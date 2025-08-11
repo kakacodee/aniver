@@ -11,7 +11,7 @@ function Music(){
         //ajustar o volume de verdade
         music.volume = 0.1// Ajuste o volume conforme necessário
         music.muted = false // Garantir que o som não esteja mudo  
-        alert("💖 Role a página")
+        alert("Espero que goste 💖")
     } else {
         music.pause();
         btnimg.src = "img/play-button (3).png"
